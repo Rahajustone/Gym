@@ -1,0 +1,16 @@
+@GymPrestationLayer_HostAddress = http://localhost:5126
+@adminId = 550e8400-e29b-41d4-a716-446655440000
+
+
+GET {{GymPrestationLayer_HostAddress}}/Subscriptions/{{adminId}}
+Accept: application/json
+### 
+
+POST {{GymPrestationLayer_HostAddress}}/Subscriptions
+Content-Type: application/json
+{
+  "subscriptionType": "Free",
+  "adminId": "{{adminId}}"
+}
+
+###
